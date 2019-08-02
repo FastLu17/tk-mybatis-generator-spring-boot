@@ -36,4 +36,8 @@ public class UserService {
         userMapper.updateByExampleSelective(user, example);
     }
 
+    public String get(){
+
+        return "再测试一次";
+    }
 }
