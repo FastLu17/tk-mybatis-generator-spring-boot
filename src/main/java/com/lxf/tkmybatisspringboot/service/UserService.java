@@ -36,9 +36,4 @@ public class UserService {
         userMapper.updateByExampleSelective(user, example);
     }
 
-    public String method(){
-
-        return "测试IDEA撤销已Push的代码";
-    }
-
 }
