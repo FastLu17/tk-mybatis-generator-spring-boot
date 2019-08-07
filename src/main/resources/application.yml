@@ -10,5 +10,10 @@ mapper:
   style: camelhump #驼峰转下划线
   check-example-entity-class: true # 默认false,用于校验通用 Example 构造参数 entityClass 是否和当前调用的 Mapper<EntityClass> 类型一致。
   safe-delete: true
+  identity: mysql
 #  safe-update: true
+#  safe-delete: true
 
+mybatis:
+  type-aliases-package: com.lxf.tkmybatisspringboot.entity
+  mapper-locations: classpath:mappers/*.xml  # 注意：如果有手写SQL语句,必须配置此选项

@@ -57,5 +57,11 @@ public class User implements Serializable {
     @Column(name = "`phone`")
     private String phone;
 
+    /**
+     * 创建日期
+     */
+    @Column(name = "`create_date`")
+    private Date createDate;
+
     private static final long serialVersionUID = 1L;
 }

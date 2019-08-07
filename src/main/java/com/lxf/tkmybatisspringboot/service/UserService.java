@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author: 小66
@@ -36,4 +37,7 @@ public class UserService {
         userMapper.updateByExampleSelective(user, example);
     }
 
+    public Map<String, Object> selectCreateDate(Integer l) {
+         return userMapper.selectCreateDate(l);
+    }
 }

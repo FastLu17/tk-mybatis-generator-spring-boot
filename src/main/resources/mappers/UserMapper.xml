@@ -13,5 +13,12 @@
     <result column="test_date" jdbcType="TIMESTAMP" property="testDate" />
     <result column="role" jdbcType="BIGINT" property="role" />
     <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
   </resultMap>
+
+    <select id="selectCreateDate" parameterType="int" resultType="java.util.HashMap">
+        select DATE_FORMAT(create_date, '%Y-%m-%d') AS createDate
+        from user
+        where test_id = #{id}
+    </select>
 </mapper>
