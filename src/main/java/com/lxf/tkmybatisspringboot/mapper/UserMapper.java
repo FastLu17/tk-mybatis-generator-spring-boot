@@ -7,5 +7,7 @@ import java.util.Map;
 
 public interface UserMapper extends Mapper<User> {
 
-    Map<String, Object> selectCreateDate(Integer id);
+    Map<String, Object> selectCreateDate(Long id);
+
+    void insertUserById(User user);
 }

@@ -37,7 +37,12 @@ public class UserService {
         userMapper.updateByExampleSelective(user, example);
     }
 
-    public Map<String, Object> selectCreateDate(Integer l) {
-         return userMapper.selectCreateDate(l);
+    public Map<String, Object> selectCreateDate(Long l) {
+        return userMapper.selectCreateDate(l);
+    }
+
+    public void insertUser(User user) {
+
+        userMapper.insertUserById(user);
     }
 }

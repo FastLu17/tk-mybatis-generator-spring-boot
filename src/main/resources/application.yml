@@ -17,3 +17,5 @@ mapper:
 mybatis:
   type-aliases-package: com.lxf.tkmybatisspringboot.entity
   mapper-locations: classpath:mappers/*.xml  # 注意：如果有手写SQL语句,必须配置此选项
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 配置SQL语句日志
