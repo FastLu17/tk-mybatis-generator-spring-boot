@@ -25,4 +25,8 @@
         from user
         where test_id = #{id}
     </select>
+    <select id="getList" resultType="com.lxf.tkmybatisspringboot.entity.User">
+        select *
+        from user
+    </select>
 </mapper>

@@ -1,5 +1,7 @@
 package com.lxf.tkmybatisspringboot.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.lxf.tkmybatisspringboot.entity.User;
 import com.lxf.tkmybatisspringboot.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,5 +46,11 @@ public class UserService {
     public void insertUser(User user) {
 
         userMapper.insertUserById(user);
+    }
+
+    public PageInfo<User> getList(){
+        PageHelper.startPage(1, 5);
+        List<User> list = userMapper.getList();
+        return new PageInfo<>(list);
     }
 }
