@@ -8,9 +8,13 @@ import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * @author 小66
+ */
 @Data
 @Table(name = "`user`")
 public class User implements Serializable {
+    //master commit 3次。
     /**
      * 主键ID
      */
