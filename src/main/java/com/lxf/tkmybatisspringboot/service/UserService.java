@@ -21,6 +21,7 @@ public class UserService {
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private UserMapper userMapper;
+    //dev commit 2次。
 
     public List<User> getUsers() {
         Example example = Example.builder(User.class).build();
