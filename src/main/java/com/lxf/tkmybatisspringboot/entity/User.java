@@ -28,6 +28,7 @@ public class User implements Serializable {
     @Column(name = "`tenant_id`")
     private Long tenantId;
 
+    //master commit 4次。
     /**
      * 名称
      */
